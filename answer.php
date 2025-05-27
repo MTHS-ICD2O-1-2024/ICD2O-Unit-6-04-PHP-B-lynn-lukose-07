@@ -34,19 +34,17 @@
       <br />
       <div class="page-content-formula">V = 4/3 π r³</div>
       <br />
-      <div class="page-content">Please enter the radius of the sphere:</div>
-      <br />
-      <span>Radius:</span>
-      <span class="page-content" name="radius"></span>
-      <br />
-      <br />
-      <form action="answer.php">
-        <!-- Accent-colored raised button with ripple -->
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          type="submit">
-          Calculate
-        </button>
-      </form>
+      <?php
+      // Input
+      $radius = $_GET['radius'];
+
+      // Process
+      $volume = (4 / 3) * M_PI * $radius ** 3;
+
+      // Output
+      echo "<p>Radius: " . number_format($radius, 2) . " mm</p>";
+      echo "<p>Volume: " . number_format($volume, 2) . " mm³</p>";
+      ?>
     </main>
   </div>
 </body>
