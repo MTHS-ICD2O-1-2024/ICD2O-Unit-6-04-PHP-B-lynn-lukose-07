@@ -28,7 +28,7 @@
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/volume_of_sphere.png" alt="sphere" />
+        <img src="./images/volume-of-sphere.png" alt="sphere" />
       </div>
       <div class="page-content-formula">Formula</div>
       <br />
